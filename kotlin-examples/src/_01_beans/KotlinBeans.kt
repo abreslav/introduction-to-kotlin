@@ -1,7 +1,5 @@
 package beans
 
-import util.println
-
 class User(
         val firstName: String,
         val lastName: String,

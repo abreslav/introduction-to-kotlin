@@ -1,6 +1,5 @@
 package _05_nulls
 
-import util.println
 import java.io.File
 import java.util.List
 

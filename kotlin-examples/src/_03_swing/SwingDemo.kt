@@ -9,7 +9,6 @@ fun main(args : Array<String>) {
     JFrame("Demo") {
         height = 400
         width = 400
-        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
 
         val text = JTextArea(greeting)
         center = text

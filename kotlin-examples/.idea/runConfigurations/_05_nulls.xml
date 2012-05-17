@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="_05_nulls" type="JetRunConfigurationType" factoryName="Kotlin">
+    <module name="kotlin-examples" />
+    <envs />
+    <JetRunConfigurationSettings>
+      <option name="mainClassName" value="_05_nulls.namespace" />
+      <option name="programParameters" value="" />
+      <option name="vmParameters" value="" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/test" />
+    </JetRunConfigurationSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method />
+  </configuration>
+</component>

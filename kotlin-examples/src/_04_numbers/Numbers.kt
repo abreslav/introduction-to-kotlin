@@ -1,7 +1,6 @@
 package numbers
 
 import java.math.BigDecimal
-import util.println
 import java.util.ArrayList
 
 fun main(args : Array<String>) {
@@ -9,9 +8,6 @@ fun main(args : Array<String>) {
     val b = "1.1".bd
 
     println(a - b)
-    println(a.minus(b))
-
-
 }
 
 

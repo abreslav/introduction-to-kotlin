@@ -4,9 +4,6 @@ import beans.User
 import java.util.Arrays
 import java.util.List
 import java.util.ArrayList
-import util.println
-import sun.net.www.content.audio.x_aiff
-import com.sun.tools.javac.resources.javac
 import java.util.Collections
 import java.util.Collection
 
@@ -19,7 +16,15 @@ fun main(args : Array<String>) {
 
 
 
-    val over30 = users.filter<User>({ (u : User) : Boolean -> u.age > 30 })
+    val over30 = users.filter({ u -> u.age > 30 })
+
+
+
+
+
+
+//    val over30 = users.filter{ u -> u.age > 30 }
+//    val over30 = users.filter<User>({ (u : User) : Boolean -> u.age > 30 })
 
 
 

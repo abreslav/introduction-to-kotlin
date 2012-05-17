@@ -3,7 +3,6 @@ package extensions
 import util.println
 
 fun main(args : Array<String>) {
-    "".iterator()
     for (c in "abcd") {
         println(c)
     }
