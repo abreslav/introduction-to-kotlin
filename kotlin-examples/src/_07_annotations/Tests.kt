@@ -1,7 +1,5 @@
 package _07_annotations
 
-import util.println
-
 import org.junit.Test as test
 import org.junit.Assert.*
 

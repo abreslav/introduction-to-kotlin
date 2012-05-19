@@ -1,7 +1,5 @@
 package extensions
 
-import util.println
-
 fun main(args : Array<String>) {
     for (c in "abcd") {
         println(c)
