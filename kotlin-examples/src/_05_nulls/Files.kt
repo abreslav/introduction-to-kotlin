@@ -30,8 +30,8 @@ fun main(args : Array<String>) {
 
 
 
-    if (files == null) return
-    println(files.size)
+//    if (files == null) return
+//    println(files.size)
 
 
 
