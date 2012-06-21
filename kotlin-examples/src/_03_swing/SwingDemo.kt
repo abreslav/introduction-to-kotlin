@@ -13,7 +13,7 @@ fun main(args : Array<String>) {
         val text = JTextArea(greeting)
         center = text
 
-        south = JPanel { JPanel.() ->
+        south = JPanel {
             west = JButton("Clear") {
                 text.setText("")
             }
