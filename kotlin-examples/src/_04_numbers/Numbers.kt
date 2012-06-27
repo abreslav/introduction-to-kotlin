@@ -4,8 +4,8 @@ import java.math.BigDecimal
 import java.util.ArrayList
 
 fun main(args : Array<String>) {
-    val a = "2.0".bd
-    val b = "1.1".bd
+    val a = BigDecimal("2.0")
+    val b = BigDecimal("1.1")
 
     println(a - b)
 }
