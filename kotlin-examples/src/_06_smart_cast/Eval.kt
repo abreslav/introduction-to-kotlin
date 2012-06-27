@@ -1,8 +1,8 @@
 package _06_smart_cast
 
-trait Expr
-class Num(val value : Int) : Expr
-class Sum(val left : Expr, val right : Expr) : Expr
+abstract class Expr
+class Num(val value : Int) : Expr()
+class Sum(val left : Expr, val right : Expr) : Expr()
 
 
 
