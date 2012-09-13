@@ -11,5 +11,15 @@ class User(
 }
 
 fun main(args: Array<String>) {
-    println(User("John", "Doe", 18))
+    val john = User("John", "Doe", 31)
+    val jane = User("Jane", "Doe", 29)
+    val poss = User("Possibly", "Maybe", 12)
+
+    val users = arrayList(john, jane, poss)
+
+    val byNickName = hashMap(
+            "Johny" to john,
+            "Jan" to jane,
+            "Boo" to poss
+    )
 }

@@ -2,15 +2,13 @@ package _02_extensions
 
 import beans.User
 import java.util.Arrays
-import java.util.List
 import java.util.ArrayList
 import java.util.Collections
-import java.util.Collection
 
 fun main(args : Array<String>) {
     val users = list(
             User("John", "Doe", 31),
-            User("Jane", "Doe", 25)
+            User("Jane", "Doe", 29)
     )
 
 
