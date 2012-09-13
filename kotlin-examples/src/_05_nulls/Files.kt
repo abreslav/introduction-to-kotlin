@@ -1,7 +1,6 @@
 package _05_nulls
 
 import java.io.File
-import java.util.List
 
 fun main(args : Array<String>) {
     val files = File("test").listFiles()
