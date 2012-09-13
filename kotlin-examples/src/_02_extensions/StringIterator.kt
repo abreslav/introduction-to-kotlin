@@ -25,14 +25,13 @@ fun main(args : Array<String>) {
 
 fun String.iterator() = StringIterator(this)
 
-class StringIterator(val str : String) {
+class StringIterator(val str: String): Iterator<Char> {
 
     var i = 0
 
-    fun next() : Char {
+    override fun next(): Char {
         return str[i++]
     }
 
-    val hasNext : Boolean
-      get() = i < str.length
+    override fun hasNext(): Boolean = i < str.length
 }
