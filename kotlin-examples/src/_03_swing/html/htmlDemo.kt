@@ -20,13 +20,13 @@ fun render() : String {
                     text("Andrey")
                 }
             }
-            tr {
-                td { bold("Description") }
-                td {
-                    text("Display steps of Life evolution in HTML")
+                tr {
+                    td { bold("Description") }
+                    td {
+                        text("Display steps of Life evolution in HTML")
+                    }
                 }
             }
-        }
 
 
     }.toString()

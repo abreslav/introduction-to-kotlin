@@ -5,7 +5,7 @@ import java.io.File
 fun main(args : Array<String>) {
     val files = File("test").listFiles()
 
-
+    // println(files.size)
 
 
 

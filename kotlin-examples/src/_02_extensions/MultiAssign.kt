@@ -37,8 +37,6 @@ fun main(args : Array<String>) {
 
 
 
-fun <K, V> Map.Entry<K, V>.component1(): K = getKey()
-fun <K, V> Map.Entry<K, V>.component2(): V = getValue()
 
 
 
