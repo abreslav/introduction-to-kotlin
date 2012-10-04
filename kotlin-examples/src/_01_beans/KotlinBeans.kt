@@ -15,11 +15,59 @@ fun main(args: Array<String>) {
     val jane = User("Jane", "Doe", 29)
     val poss = User("Possibly", "Maybe", 12)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     val users = arrayList(john, jane, poss)
+
+    for (user in users) {
+        println(user)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     val byNickName = hashMap(
             "Johny" to john,
             "Jan" to jane,
             "Boo" to poss
     )
+
+    println(
+        byNickName["Jan"]
+    )
+
+    byNickName["Foo"] = poss
+
+
+
+
+
+    for ((name, user) in byNickName) {
+        println("$name -> $user")
+    }
 }
