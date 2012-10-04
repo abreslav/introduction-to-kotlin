@@ -1,0 +1,12 @@
+<root>
+    <item name='com.google.common.base.Predicate boolean apply(T)'>
+        <annotation name='jet.runtime.typeinfo.KotlinSignature'>
+            <val name="value" val="&quot;fun apply(p0 : T) : Boolean&quot;"/>
+        </annotation>
+    </item>
+    <item name='com.google.common.base.Function T apply(F)'>
+        <annotation name='jet.runtime.typeinfo.KotlinSignature'>
+            <val name="value" val="&quot;fun apply(p0 : F) : T&quot;"/>
+        </annotation>
+    </item>
+</root>

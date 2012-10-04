@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="junit-4.10" level="project" />
     <orderEntry type="library" name="KotlinRuntime" level="project" />
+    <orderEntry type="library" name="guava-13.0.1" level="project" />
   </component>
 </module>
 
