@@ -1,16 +1,52 @@
 package extensions.muli
 
+import java.awt.Point
+import java.util.regex.Pattern
+import java.util.ArrayList
+
 fun main(args : Array<String>) {
 
-    val map = hashMap(
-            1 to "one",
-            2 to "two",
-            5 to "many"
-    )
+    val (x, y) = Point(1, 2)
+    println("($x, $y)")
 
-    for ((num, name) in map) {
-        println("$num -> $name")
+    println(parseFileNameAndLine("Foo12.java:12"))
+}
+
+fun Point.component1() = x
+fun Point.component2() = y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun testMultiReturn() {
+    val (file, line) = parseFileNameAndLine("Foo12.java:12")
+
+    println("Line $line in $file")
+}
+
+
+
+
+data class Location(val fileName: String, val line: Int)
+
+fun parseFileNameAndLine(str: String): Location {
+    val m = str.toGroupsByRegex("([\\w\\.]+):(\\d+)")
+    if (m == null) {
+        throw IllegalArgumentException("String format is wrong: '$str', must be <file-name>:<line>")
     }
+    return Location(m[1], m[2].toInt())
 }
 
 
@@ -18,6 +54,33 @@ fun main(args : Array<String>) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun String.toGroupsByRegex(regex: String): List<String>? {
+    val m = Pattern.compile(regex).matcher(this)
+    if (!m.matches()) return null
+    val result = ArrayList<String>()
+    for (g in 0..m.groupCount()) {
+        result.add(m.group(g)!!)
+    }
+    return result
+}
 
 
 
