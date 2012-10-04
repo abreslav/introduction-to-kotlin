@@ -7,7 +7,8 @@ fun main(args : Array<String>) {
 
     // println(files.size)
 
-
+    // if (files == null) return
+    // if (files == null) fail()
 
 
 
@@ -69,3 +70,5 @@ fun main(args : Array<String>) {
 
     println(files?.size ?: "no files")
 }
+
+fun fail() = throw IllegalArgumentException()
