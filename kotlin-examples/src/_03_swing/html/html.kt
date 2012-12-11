@@ -81,6 +81,6 @@ fun <T> Collection<T>.join(sep : String = "", prep : String = "") : String {
             sb.append(sep)
         }
     }
-    return sb.toString()!!
+    return sb.toString()
 }
 

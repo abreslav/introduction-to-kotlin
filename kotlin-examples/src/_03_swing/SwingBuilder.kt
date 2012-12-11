@@ -52,8 +52,8 @@ fun JPanel(init : JPanel.() -> Unit) : JPanel {
 fun JButton(text : String, action : (ActionEvent) -> Unit) : JButton {
     val result = JButton(text)
     result.addActionListener(object : ActionListener {
-        override fun actionPerformed(e: ActionEvent?) {
-            action(e!!)
+        override fun actionPerformed(e: ActionEvent) {
+            action(e)
         }
     })
     return result
@@ -64,15 +64,15 @@ var JFrame.title : String
     set(t) {setTitle(t)}
 
 var JFrame.size : Pair<Int, Int>
-    get() = Pair(getSize()!!.getWidth().toInt(), getSize()!!.getHeight().toInt())
+    get() = Pair(getSize().getWidth().toInt(), getSize().getHeight().toInt())
     set(dim) {setSize(Dimension(dim.first, dim.second))}
 
 var JFrame.height : Int
-    get() = getSize()!!.getHeight().toInt()
+    get() = getSize().getHeight().toInt()
     set(h) {setSize(width, h)}
 
 var JFrame.width : Int
-    get() = getSize()!!.getWidth().toInt()
+    get() = getSize().getWidth().toInt()
     set(w) {setSize(height, w)}
 
 var JFrame.defaultCloseOperation : Int
