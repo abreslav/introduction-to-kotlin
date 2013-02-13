@@ -53,15 +53,15 @@ fun <T> list(vararg items : T) : List<T> {
     return r
 }
 
-fun <T> Collection<T>.filter(predicate : (T) -> Boolean) : List<T> {
-    val r = ArrayList<T>()
-    for (item in this) {
-        if (predicate(item)) {
-            r.add(item)
-        }
-    }
-    return r
-}
+//fun <T> Collection<T>.filter(predicate : (T) -> Boolean) : List<T> {
+//    val r = ArrayList<T>()
+//    for (item in this) {
+//        if (predicate(item)) {
+//            r.add(item)
+//        }
+//    }
+//    return r
+//}
 
 //fun <T> Collection<T>.filter(predicate : T.() -> Boolean) : List<T> {
 //    return filter {x -> x.predicate()}
