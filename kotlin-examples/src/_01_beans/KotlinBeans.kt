@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
 
 
 
-    val users = arrayList(john, jane, poss)
+    val users = arrayListOf(john, jane, poss)
 
     for (user in users) {
         println(user)
@@ -51,7 +51,7 @@ fun main(args: Array<String>) {
 
 
 
-    val byNickName = hashMap(
+    val byNickName = hashMapOf(
             "Johny" to john,
             "Jan" to jane,
             "Boo" to poss

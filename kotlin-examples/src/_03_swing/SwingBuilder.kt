@@ -67,11 +67,11 @@ var JFrame.size : Pair<Int, Int>
     get() = Pair(getSize().getWidth().toInt(), getSize().getHeight().toInt())
     set(dim) {setSize(Dimension(dim.first, dim.second))}
 
-var JFrame.height : Int
+var JFrame.heightInt : Int
     get() = getSize().getHeight().toInt()
     set(h) {setSize(width, h)}
 
-var JFrame.width : Int
+var JFrame.widthInt : Int
     get() = getSize().getWidth().toInt()
     set(w) {setSize(height, w)}
 

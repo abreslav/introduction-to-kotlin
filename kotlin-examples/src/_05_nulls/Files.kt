@@ -71,4 +71,4 @@ fun main(args : Array<String>) {
     println(files?.size ?: "no files")
 }
 
-fun fail() = throw IllegalArgumentException()
+fun fail(): Nothing = throw IllegalArgumentException()

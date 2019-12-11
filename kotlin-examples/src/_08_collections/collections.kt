@@ -9,7 +9,7 @@ fun print(list: List<Any>) {
 }
 
 fun main(args: Array<String>) {
-    val l: ArrayList<Int> = arrayList(1, 2, 3)
+    val l: ArrayList<Int> = arrayListOf(1, 2, 3)
 
     print(l)
 }

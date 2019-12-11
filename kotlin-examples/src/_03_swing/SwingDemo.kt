@@ -7,8 +7,8 @@ val greeting = "Hello,\n\nEnter some text here!"
 
 fun main(args : Array<String>) {
     JFrame("Demo") {
-        height = 400
-        width = 400
+        heightInt = 400
+        widthInt = 400
 
         val text = JTextArea(greeting)
         center = text

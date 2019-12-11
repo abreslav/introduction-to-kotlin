@@ -11,13 +11,13 @@ import javax.swing.JScrollPane
 import java.util.ArrayList
 
 class Attribute(val name : String, val value : String) {
-    fun toString() = """$name="$value" """
+    override fun toString() = """$name="$value" """
 }
 
 abstract class Tag(val name : String) {
     val children : MutableList<Tag> = ArrayList()
     val attributes : MutableList<Attribute> = ArrayList()
-    open fun toString() = "<$name${attributes.join(prep = " ")}>${children.join()}</$name>"
+    override fun toString() = "<$name${attributes.join(prep = " ")}>${children.join()}</$name>"
 }
 
 class HTML : Tag("html")
@@ -29,7 +29,7 @@ class Text(val text : String) : Tag("b") {
     override fun toString() = text
 }
 
-fun Tag.doInit<T : Tag>(t : T, f : T.() -> Unit) : T{
+fun <T : Tag> Tag.doInit(t : T, f : T.() -> Unit) : T{
     t.f()
     children.add(t)
     return t

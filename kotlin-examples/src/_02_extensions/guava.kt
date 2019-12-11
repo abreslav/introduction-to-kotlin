@@ -5,7 +5,7 @@ import com.google.common.base.Function
 import com.google.common.base.Predicate
 
 fun main(args: Array<String>) {
-    val list = arrayList("a", "bb", "acc")
+    val list = arrayListOf("a", "bb", "acc")
 
 
 
@@ -37,10 +37,10 @@ fun main(args: Array<String>) {
 
 }
 
-fun p<T>(body: (T) -> Boolean): Predicate<T>
+fun <T : Any> p(body: (T) -> Boolean): Predicate<T>
         = object : Predicate<T> {
-            public override fun apply(p0: T): Boolean {
-                return body(p0)
+            public override fun apply(p0: T?): Boolean {
+                return body(checkNotNull(p0))
             }
 
             public override fun equals(p0: Any?): Boolean {
@@ -48,10 +48,10 @@ fun p<T>(body: (T) -> Boolean): Predicate<T>
             }
         }
 
-fun gf<T>(body: (String) -> T): Function<String, T>
+fun <T> gf(body: (String) -> T): Function<String, T>
         = object : Function<String, T> {
-            public override fun apply(p0: String): T {
-                return body(p0)
+            public override fun apply(p0: String?): T {
+                return body(checkNotNull(p0))
             }
             public override fun equals(p0: Any?): Boolean {
                 throw UnsupportedOperationException()
