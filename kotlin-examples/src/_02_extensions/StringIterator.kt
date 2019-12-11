@@ -28,7 +28,7 @@ fun main(args : Array<String>) {
 
 
 
-fun String.iterator() = StringIterator(this)
+operator fun String.iterator() = StringIterator(this)
 
 class StringIterator(val str: String): Iterator<Char> {
 

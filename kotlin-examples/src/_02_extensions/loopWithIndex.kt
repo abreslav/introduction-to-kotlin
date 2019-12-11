@@ -1,7 +1,7 @@
 package _02_extensions.loopWithIndex
 
 fun main(args: Array<String>) {
-    val list = arrayList("a", "b", "c")
+    val list = arrayListOf("a", "b", "c")
     list.loopWithIndex({i, v -> println("list[$i] = $v")})
 }
 

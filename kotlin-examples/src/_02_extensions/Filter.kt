@@ -32,7 +32,7 @@ fun main(args : Array<String>) {
 
 
 
-    println("${over30.size()} user(s) over 30 years old")
+    println("${over30.size} user(s) over 30 years old")
 
 
 
@@ -41,7 +41,7 @@ fun main(args : Array<String>) {
 
 
 
-    val youngestOver20 = users filter {u -> u.age > 20 } min {a, b -> a.age - b.age}
+    val youngestOver20 = users.filter {u -> u.age > 20 }.min {a, b -> a.age - b.age}
     println("Youngest over 20: $youngestOver20")
 }
 
